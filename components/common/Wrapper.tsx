@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import React, { ReactNode } from "react";
 import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -5,10 +6,15 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 type Props = {
   children: ReactNode;
   backgroundColor?: string;
+  StatusBarStyle?: "auto" | "inverted" | "light" | "dark";
 };
 
 const Wrapper = (props: Props) => {
-  const { children, backgroundColor } = props;
+  const {
+    children,
+    backgroundColor = "white",
+    StatusBarStyle = "dark",
+  } = props;
   const insets = useSafeAreaInsets();
 
   return (
@@ -20,6 +26,7 @@ const Wrapper = (props: Props) => {
           backgroundColor,
         }}
       >
+        <StatusBar style={StatusBarStyle} />
         {children}
       </View>
     </View>
