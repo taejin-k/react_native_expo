@@ -1,16 +1,21 @@
 import { Ionicons } from "@expo/vector-icons";
-import { Tabs, useRouter } from "expo-router";
+import { Tabs } from "expo-router";
 import React from "react";
+import { Text } from "react-native";
 
 const TabLayout = () => {
-  const router = useRouter();
-
   return (
     <Tabs screenOptions={{ headerShown: false }}>
       <Tabs.Screen
         name="index"
         options={{
-          tabBarLabel: () => null,
+          tabBarLabel: ({ focused }) => (
+            <Text
+              className={`${focused ? "text-black" : "text-gray-500"} text-sm`}
+            >
+              홈
+            </Text>
+          ),
           tabBarIcon: ({ focused }) => (
             <Ionicons
               name="home"
@@ -24,7 +29,13 @@ const TabLayout = () => {
       <Tabs.Screen
         name="search"
         options={{
-          tabBarLabel: () => null,
+          tabBarLabel: ({ focused }) => (
+            <Text
+              className={`${focused ? "text-black" : "text-gray-500"} text-sm`}
+            >
+              검색
+            </Text>
+          ),
           tabBarIcon: ({ focused }) => (
             <Ionicons
               name="search"
@@ -38,7 +49,13 @@ const TabLayout = () => {
       <Tabs.Screen
         name="add"
         options={{
-          tabBarLabel: () => null,
+          tabBarLabel: ({ focused }) => (
+            <Text
+              className={`${focused ? "text-black" : "text-gray-500"} text-sm`}
+            >
+              추가
+            </Text>
+          ),
           tabBarIcon: ({ focused }) => (
             <Ionicons
               name="add"
@@ -52,7 +69,13 @@ const TabLayout = () => {
       <Tabs.Screen
         name="activity"
         options={{
-          tabBarLabel: () => null,
+          tabBarLabel: ({ focused }) => (
+            <Text
+              className={`${focused ? "text-black" : "text-gray-500"} text-sm`}
+            >
+              활동
+            </Text>
+          ),
           tabBarIcon: ({ focused }) => (
             <Ionicons
               name="heart-outline"
@@ -66,7 +89,13 @@ const TabLayout = () => {
       <Tabs.Screen
         name="profile"
         options={{
-          tabBarLabel: () => null,
+          tabBarLabel: ({ focused }) => (
+            <Text
+              className={`${focused ? "text-black" : "text-gray-500"} text-sm`}
+            >
+              프로필
+            </Text>
+          ),
           tabBarIcon: ({ focused }) => (
             <Ionicons
               name="person-outline"
