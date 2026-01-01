@@ -17,7 +17,6 @@ const Wrapper = (props: Props) => {
         style={{
           flex: 1,
           paddingTop: insets.top,
-          paddingBottom: insets.bottom,
           backgroundColor,
         }}
       >
