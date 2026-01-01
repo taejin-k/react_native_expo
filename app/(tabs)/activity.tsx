@@ -1,11 +1,11 @@
-import { Text, View } from "react-native";
+import Wrapper from "@/components/common/Wrapper";
+import { Text } from "react-native";
 
 const Activity = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-amber-600">
+    <Wrapper>
       <Text>Activity Page</Text>
-      <View />
-    </View>
+    </Wrapper>
   );
 };
 

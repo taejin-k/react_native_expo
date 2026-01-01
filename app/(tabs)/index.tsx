@@ -1,12 +1,12 @@
-import { Text, View } from "react-native";
+import Wrapper from "@/components/common/Wrapper";
+import { Text } from "react-native";
 
-const One = () => {
+const Home = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-amber-200">
+    <Wrapper>
       <Text>Home Page</Text>
-      <View />
-    </View>
+    </Wrapper>
   );
 };
 
-export default One;
+export default Home;

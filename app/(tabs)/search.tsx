@@ -1,11 +1,14 @@
-import { Text, View } from "react-native";
+import Wrapper from "@/components/common/Wrapper";
+import { Text } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const Search = () => {
+  const insets = useSafeAreaInsets();
+
   return (
-    <View className="flex-1 items-center justify-center bg-amber-400">
+    <Wrapper>
       <Text>Search Page</Text>
-      <View />
-    </View>
+    </Wrapper>
   );
 };
 

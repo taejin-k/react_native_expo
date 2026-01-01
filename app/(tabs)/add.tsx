@@ -1,11 +1,11 @@
-import { Text, View } from "react-native";
+import Wrapper from "@/components/common/Wrapper";
+import { Text } from "react-native";
 
 const Add = () => {
   return (
-    <View className="flex-1 bg-amber-800">
+    <Wrapper>
       <Text>Add Page</Text>
-      <View />
-    </View>
+    </Wrapper>
   );
 };
 
