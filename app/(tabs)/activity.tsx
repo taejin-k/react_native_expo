@@ -1,12 +1,12 @@
 import { Text, View } from "react-native";
 
-const Two = () => {
+const Activity = () => {
   return (
     <View className="flex-1 items-center justify-center bg-amber-600">
-      <Text>Two Page</Text>
+      <Text>Activity Page</Text>
       <View />
     </View>
   );
 };
 
-export default Two;
+export default Activity;
