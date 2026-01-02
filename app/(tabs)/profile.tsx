@@ -1,5 +1,5 @@
-import Wrapper from "@/components/common/Wrapper";
-import { Text } from "react-native";
+import Wrapper from '@/components/common/Wrapper';
+import { Text } from 'react-native';
 
 const Profile = () => {
   return (
